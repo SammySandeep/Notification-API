@@ -1,24 +1,43 @@
-# README
+# Ruby on Rails Notification API Application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This Rails application is built to serve as a notification hub, allowing secure communication between services via API endpoints, utilizing JWT for authentication.
 
-Things you may want to cover:
+## Getting started
 
-* Ruby version
+Prerequisites
+Before you begin, ensure you have the following installed on your system:
+   
+    Ruby version :- 3.2.2
+    Rails version :- 7.0.6
 
-* System dependencies
+Clone this repository to your local machine:
 
-* Configuration
+    ```bash
+    > git clone https://github.com/SammySandeep/Notification-API.git
+    ```
 
-* Database creation
+Navigate to the project directory
 
-* Database initialization
+    ```bash
+    > cd notification_api 
+    ```
 
-* How to run the test suite
+Install the required gems
 
-* Services (job queues, cache servers, search engines, etc.)
+    ```bash
+    > bundle install 
+    ```    
 
-* Deployment instructions
+Create a .env file at the root of your Rails project:
+    
+    # .env
+    jwt_secret='your_jwt_secret'
 
-* ...
+
+Start the Rails server in port 3001:
+
+    ```bash
+    > rails server -p 3001
+    ```  
+
+Your application should now be running on http://localhost:3001/.
